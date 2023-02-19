@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/universityTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="University:"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_swamp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/korneplod" />
+
+    <TextView
+        android:id="@+id/nameValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ilya"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@id/nameTextView"
+
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/universityValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MIREA"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@id/nameTextView"
+
+        app:layout_constraintTop_toBottomOf="@id/nameValueTextView"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/universityTextView"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="(phone)"
+        android:ems="10"
+        android:hint="(phone)"
+        android:inputType="phone"
+        app:layout_constraintLeft_toRightOf="@id/imageView4"
+        app:layout_constraintTop_toBottomOf="@id/universityValueTextView"
+        app:layout_constraintWidth_percent="0.8"
+        app:srcCompat="@android:drawable/sym_action_call"
+        tools:text="+7(900)000-00-00" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
