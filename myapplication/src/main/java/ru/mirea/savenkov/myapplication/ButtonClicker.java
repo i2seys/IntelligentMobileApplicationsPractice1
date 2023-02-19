@@ -25,7 +25,7 @@ public class ButtonClicker extends AppCompatActivity {
         View.OnClickListener oclBtnWhoAmI = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textViewOut.setText("Мой номер по списку №20");
+                textViewOut.setText("Мой номер по списку №22");
             }
         };
 
